@@ -140,6 +140,7 @@ class TabView extends PureComponent<void, Props, void> {
       swipeEnabled,
       lazy,
       screenProps,
+      canJumpToTab,
     } = this.props;
 
     let renderHeader;
@@ -180,6 +181,7 @@ class TabView extends PureComponent<void, Props, void> {
       navigationState: this.props.navigation.state,
       screenProps: this.props.screenProps,
       style: styles.container,
+      canJumpToTab,
     };
 
     return <TabViewAnimated {...props} />;
